@@ -1,0 +1,10 @@
+button {
+    display: flex;
+    
+    left: 371px;
+    /*width: 769px;*/
+    height: 70px;
+    opacity: 1;
+    justify-content: space-around;
+    align-items: center;
+}
