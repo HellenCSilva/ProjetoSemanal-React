@@ -1,63 +1,25 @@
 import React from 'react'
 import Style from './Produtos.module.css'
 
-function Produtos() {
-  return (
-    <div className='conteudos'>
-        <div className='center'>
-        <h2>Sua seleção especial</h2>
-
-          <div>
-              <h3 className='name'>Nome do produto</h3>
-              <p className='desc'> Descrição do produto</p>
-              <button className='btn'>Comprar</button>
-          </div>
-          
-          <div>
-                 <h3 className='name'>Nome do produto</h3>
-                 <p className='desc'> Descrição do produto</p>
-                 <button className='btn'>Comprar</button>
-          </div>
-
-          <div>
-                <h3 className='name'>Nome do produto</h3>
-                <p className='desc'> Descrição do produto</p>
-                <button className='btn'>Comprar</button>
-          </div>
-
-          <div>
-                <h3 className='name'>Nome do produto</h3>
-                <p className='desc'> Descrição do produto</p>
-                <button className='btn'>Comprar</button>
-          </div>
-          
-          <div>
-                <h3 className='name'>Nome do produto</h3>
-                <p className='desc'> Descrição do produto</p>
-                <button className='btn'>Comprar</button>
-          </div>
-
-          <div>
-                <h3 className='name'>Nome do produto</h3>
-                <p className='desc'> Descrição do produto</p>
-                <button className='btn'>Comprar</button>
-          </div>
-
-          <div>
-                <h3 className='name'>Nome do produto</h3>
-                <p className='desc'> Descrição do produto</p>
-                <button className='btn'>Comprar</button>
-          </div>
-
-          <div>
-                <h3 className='name'>Nome do produto</h3>
-                <p className='desc'> Descrição do produto</p>
-                <button className='btn'>Comprar</button>
-          </div>
-        </div>
-
-      </div>
-  )
-}
+function Produtos({img,title,descri,precoAnterior,precoAtual,parcelas,qtdParcelas}){
+      return(
+          <article>
+              <figure style={{'backgroundImage':`url(${img})`}}>
+                  
+              </figure>
+                  <figcaption>{title}</figcaption>
+              <span>
+                 {descri}
+              </span>
+              <p>
+              
+              <small>De: {precoAnterior}</small> 
+              <strong>Para: {precoAtual}</strong>
+              <small>ou {qtdParcelas} de: {parcelas}</small>
+              </p>
+          <button>Comprar</button>
+          </article>
+      )
+  }
 
 export default Produtos
