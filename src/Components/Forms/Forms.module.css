@@ -1,4 +1,4 @@
-h1 {
+.h1 {
     /* Layout Properties */
 top: 1818px;
 left: 655px;
@@ -12,7 +12,7 @@ color: #888888;
 opacity: 1;
 }
 
-h2{
+.h2{
     /* Layout Properties */
 top: 1884px;
 left: 483px;

@@ -1,13 +1,13 @@
 import React from 'react'
 import Forms from '../Forms/Forms'
-import Produtos from './Produtos.jsx'
-import Style from './Conteudo.module.css'
+import Produtos from '../Produtos/Produtos'
+import S from './Conteudo.module.css'
 
 function Conteudo() {
   return (
     <body>
-      <section className='box'>
-        <div className='tittle'>
+      <section className={S.box}>
+        <div className={S.tittle}>
         <h1>Ajude o algoritimo a ser mais certeiro</h1>
         </div>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, 
@@ -23,7 +23,7 @@ function Conteudo() {
                <Forms />
              </form>
 
-             <section className='cards' >
+             <section className={S.cards} >
                <Produtos />
              </section>
     </body>

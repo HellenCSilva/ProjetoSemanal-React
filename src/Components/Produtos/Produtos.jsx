@@ -1,5 +1,5 @@
 import React from 'react'
-import Style from './Produtos.module.css'
+import S from './Produtos.module.css'
 
 function Produtos({img,title,descri,precoAnterior,precoAtual,parcelas,qtdParcelas}){
       return(
@@ -7,17 +7,17 @@ function Produtos({img,title,descri,precoAnterior,precoAtual,parcelas,qtdParcela
               <figure style={{'backgroundImage':`url(${img})`}}>
                   
               </figure>
-                  <figcaption>{title}</figcaption>
-              <span>
+                  <figcaption className={S.name}>{title}</figcaption>
+              <span className={S.desc}>
                  {descri}
               </span>
-              <p>
+              <p className={S.desc}>
               
               <small>De: {precoAnterior}</small> 
               <strong>Para: {precoAtual}</strong>
               <small>ou {qtdParcelas} de: {parcelas}</small>
               </p>
-          <button>Comprar</button>
+          <button className={S.btn}>Comprar</button>
           </article>
       )
   }
